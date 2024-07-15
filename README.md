@@ -15,10 +15,10 @@ Jenkins will then automatically build and test the code in response to the webho
 ⚠️ put the GitHub hook trigger for GITScm polling option in jenkins</br>
 ⚠️  </br>
 
-Current error 👎🏻:
+Current error 👎🏻:</br> 
 /var/jenkins_home/workspace/webhoook@tmp/durable-573eb755/script.sh.copy: 1: terraform: not found
 </br> 
-possible solution:
+possible solution:</br> 
 On your build environment you need to find out where terraform is installed and ensure that is on the path.</br> 
 If not you need to add the directory to the agent path on Jenkins.
 
