@@ -1,4 +1,4 @@
-# Trying The Second Method
+# Trying The Webhook Method
 
 ## Webhook:
 A webhook allows an application to send real-time data to another application. </br>
