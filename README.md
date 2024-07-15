@@ -10,3 +10,4 @@ sources: </br>
 1. https://medium.com/@sangeetv09/how-to-configure-webhook-in-github-and-jenkins-for-automatic-trigger-with-cicd-pipeline-34133e9de0ea
 2. https://github.com/rahuls512/AWS-CICD-with-Jenkins-Terraform-Webhook-GroovyScripts
 3. https://youtu.be/nxp-WEz0KE8?si=QEoyHHwxw-XFO9wt
+4. https://medium.com/@rahulsharan512/aws-devops-automation-ci-cd-with-jenkins-terraform-webhook-and-groovy-scripts-7bef969a6c52
