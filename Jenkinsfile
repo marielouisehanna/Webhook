@@ -1,4 +1,4 @@
-ipeline {
+pipeline {
 
     environment {
         AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
