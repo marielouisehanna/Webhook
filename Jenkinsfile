@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-                git branch: 'main', url: 'https://github.com/marielouisehanna/Webhook.git'
+                git branch: 'master', url: 'https://github.com/marielouisehanna/Webhook.git'
                
             }
         }
