@@ -69,5 +69,10 @@
                 echo 'test 6'
             }
         }
+        stage ("testing 7") {
+            steps {
+                echo 'test 7'
+            }
+        }
     }
 }
