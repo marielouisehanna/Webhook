@@ -1,20 +1,24 @@
-provider "aws" {
-  region = "eu-north-1"
+data "aws_ami" "ubuntu" {
+  most_recent = true
 
-}
-terraform {
-  backend "s3" {
-    bucket         = "rs-terraform-statefile01"
-    key            = "terraform-statefile"
-    region         = "eu-north-1"
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
+  owners = ["099720109477"] # Canonical
 }
 
-resource "aws_instance" "this" {
-  ami           = "ami-073e64e4c237c08ad" 
-  instance_type = "t3.micro"
-  key_name      = "awskeypair"
+resource "aws_instance" "web" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = var.instance_type
+
   tags = {
-    Name = "Terraform-Instance"
+    Name = "HelloWorld"
   }
 }
