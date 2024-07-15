@@ -17,6 +17,11 @@
 
             }
         }
+        stage ("testing echo stage") {
+            steps {
+                echo 'test 1'
+            }
+        }
         stage ("terraform init") {
             steps {
                 sh 'terraform init'
