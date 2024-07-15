@@ -12,11 +12,15 @@ Jenkins will then automatically build and test the code in response to the webho
    (You cannot receive webhooks locally unless you are tunneling external requests)
 4. create a new job in Jenkins using the jenknsfile </br>
 ⚠️ Rename it master not main (it will give an error) </br>
-⚠️ put the :GitHub hook trigger for GITScm polling option in jenkins</br>
+⚠️ put the GitHub hook trigger for GITScm polling option in jenkins</br>
 ⚠️  </br>
-Current error 👎🏻:
 
+Current error 👎🏻:
 /var/jenkins_home/workspace/webhoook@tmp/durable-573eb755/script.sh.copy: 1: terraform: not found
+</br> 
+possible solution:
+On your build environment you need to find out where terraform is installed and ensure that is on the path.</br> 
+If not you need to add the directory to the agent path on Jenkins.
 
 
 sources: </br>
