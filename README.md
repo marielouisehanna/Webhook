@@ -11,7 +11,7 @@ Jenkins will then automatically build and test the code in response to the webho
 3. used ngrok for the URL </br>
    (You cannot receive webhooks locally unless you are tunneling external requests)
 4. create a new job in Jenkins using the jenknsfile </br>
-⚠️ Rename it main not master (it will give an error) </br>
+⚠️ Rename it master not main (it will give an error) </br>
 ⚠️ put the :GitHub hook trigger for GITScm polling option in jenkins</br>
 </br>
 Current error 👎🏻:
