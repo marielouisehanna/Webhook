@@ -74,5 +74,11 @@
                 echo 'test 7'
             }
         }
+
+        stage ("terraform destroy") {
+            steps {
+                sh 'terraform destroy --auto-approve'
+            }
+        }
     }
 }
