@@ -28,7 +28,7 @@
             steps {
                 echo 'test 2'
             }
-        }
+        }/*
         stage ("terrafrom plan") {
             steps {
                 sh 'terraform plan '
@@ -48,13 +48,13 @@
             steps {
                 echo 'test 6'
             }
-        }
-/*
+        }*/
+
         stage ("terraform destroy") {
             steps {
                 sh 'terraform destroy --auto-approve'
             }
-        }*/
+        }
 
     }
 }
