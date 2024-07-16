@@ -28,7 +28,7 @@
             steps {
                 echo 'test 2'
             }
-        }
+        }/*
         stage ("terraform fmt") {
             steps {
                 sh 'terraform fmt'
@@ -73,14 +73,12 @@
             steps {
                 echo 'test 7'
             }
-        }
-        /*
+        }*/
         stage ("terraform destroy") {
             steps {
                 sh 'terraform destroy --auto-approve'
             }
         }
-        */
 
     }
 }
