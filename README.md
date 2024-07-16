@@ -22,7 +22,7 @@ Current error 👎🏻:</br>
 possible solution:</br> 
 On your build environment you need to find out where terraform is installed and ensure that is on the path.</br> 
 If not you need to add the directory to the agent path on Jenkins.
---> ✔️ downloaded terraform inside the docker container 
+</br> --> ✔️ downloaded terraform inside the docker container 
 
 
 sources: </br>
