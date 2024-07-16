@@ -13,17 +13,21 @@ Jenkins will then automatically build and test the code in response to the webho
 4. create a new job in Jenkins using the jenknsfile </br>
 ⚠️ Rename it master not main (it will give an error) </br>
 ⚠️ put the GitHub hook trigger for GITScm polling option in jenkins</br>
-⚠️ Dwonload terraform inside the docker container </br>
+⚠️ Download terraform inside the docker container </br>
 
 
-Current error 👎🏻:</br> 
+## Current error 👎🏻:</br> 
 /var/jenkins_home/workspace/webhoook@tmp/durable-573eb755/script.sh.copy: 1: terraform: not found
 </br> 
 possible solution:</br> 
 On your build environment you need to find out where terraform is installed and ensure that is on the path.</br> 
 If not you need to add the directory to the agent path on Jenkins.
-</br> --> ✔️ downloaded terraform inside the docker container 
-
+</br> --> ✔️ downloaded terraform inside the docker container
+</br>
+</br>
+## Next Steps 🪜:</br>
+1. Trying to do the same with a docker container
+2. Adding GitHooks, pre-commits ...
 
 sources: </br>
 https://medium.com/@sangeetv09/how-to-configure-webhook-in-github-and-jenkins-for-automatic-trigger-with-cicd-pipeline-34133e9de0ea </br>
