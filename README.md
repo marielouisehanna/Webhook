@@ -5,6 +5,9 @@ A webhook allows an application to send real-time data to another application. <
 In the context of Jenkins and GitHub, a webhook is a mechanism used by GitHub to notify Jenkins of repository changes. </br>
 Jenkins will then automatically build and test the code in response to the webhook notification. The webhook triggers a build. </br>
 
+## What is Jenkins:
+Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration, and continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat.
+
 ## What i am doing 
 1. created the jenkinsfile where i put the pipeline code 
 2. added the credentials in jenkins 
