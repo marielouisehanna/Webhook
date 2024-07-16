@@ -14,7 +14,7 @@ Jenkins will then automatically build and test the code in response to the webho
 ⚠️ Rename it master not main (it will give an error) </br>
 ⚠️ put the GitHub hook trigger for GITScm polling option in jenkins</br>
 ⚠️  </br>
-1
+
 
 Current error 👎🏻:</br> 
 /var/jenkins_home/workspace/webhoook@tmp/durable-573eb755/script.sh.copy: 1: terraform: not found
